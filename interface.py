@@ -50,9 +50,9 @@ if "df" not in st.session_state:
 #if "embedding_model" not in st.session_state:
   #st.session_state.embedding_model = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL, model_kwargs={"device": "cpu"})
 
-if "rag_pipeline" not in st.session_state:
-  vectordb = FAISS.load_local(FAISS_PATH, st.session_state.embedding_model, distance_strategy=DistanceStrategy.COSINE, allow_dangerous_deserialization=True)
-  st.session_state.rag_pipeline = SelfQueryRetriever(vectordb, st.session_state.df)
+#if "rag_pipeline" not in st.session_state:
+  #vectordb = FAISS.load_local(FAISS_PATH, st.session_state.embedding_model, distance_strategy=DistanceStrategy.COSINE, allow_dangerous_deserialization=True)
+  #st.session_state.rag_pipeline = SelfQueryRetriever(vectordb, st.session_state.df)
 
 if "resume_list" not in st.session_state:
   st.session_state.resume_list = []
