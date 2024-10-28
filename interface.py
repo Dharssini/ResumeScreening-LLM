@@ -24,7 +24,7 @@ sys.path.append(os.path.dirname(CURRENT_DIR))
 DATA_PATH = "./data/main-data/synthetic-resumes.csv"
 FAISS_PATH = "./vectorstore"
 RAG_K_THRESHOLD = 5
-#EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+EMBEDDING_MODEL = "empty"
 #LLM_MODEL = "TheBloke/Mistral-7B-Instruct-v0.1-GGUF"
 CUSTOMED_ENDPOINT = "http://localhost:1234/v1"
 API_KEY = "lm-studio"
