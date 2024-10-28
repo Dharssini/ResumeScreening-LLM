@@ -123,7 +123,7 @@ for message in st.session_state.chat_history:
 
 
 
-retriever = st.session_state.rag_pipeline
+#retriever = st.session_state.rag_pipeline
 
 llm = ChatBot(
   # api_key="lm-studio",
